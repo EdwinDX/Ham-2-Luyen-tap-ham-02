@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bai-9.js"></script>
+</head>
+<body>
+<input type="text" id="inputString" placeholder="Nhập chuỗi">
+<button onclick="insertItToArray()">Xác nhận</button>
+<p id="show"></p>
+<input type="text" id="inputStringNeed" placeholder="Nhập chuỗi">
+<button onclick="show(isItInArray())">Tìm</button>
+<script>
+    let arr = [];
+function show(result) {
+    if (result===-1) {
+        alert('Không thuộc mảng');
+    }
+    else {
+        alert(`xuất hiện ${result} lần`);
+    }
+}
+</script>
+</body>
+</html>
